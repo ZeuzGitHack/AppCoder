@@ -11,3 +11,27 @@ def curso(req, nombre, camada):
 def lista_cursos(req):
     lista = Curso.objects.all()
     return render(req, "lista_cursos.html", {"lista_cursos": lista}) 
+
+def inicio(req):
+    
+    return HttpResponse("Pantalla inicio")
+
+
+def cursos(req):
+    
+    return HttpResponse("Pantalla cursos")
+
+
+def profesores(req):
+    
+    return HttpResponse("Pantalla profesores")
+
+
+def estudiantes(req):
+    
+    return HttpResponse("Pantalla estudiantes")
+
+
+def entregables(req):
+    
+    return HttpResponse("Pantalla entregables")
