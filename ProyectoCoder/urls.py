@@ -21,5 +21,5 @@ from AppCoder.views import curso, lista_cursos
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('nuevo-curso/<nombre>/<camada>', curso),
-    path('lista-cursos', lista_cursos),
+    path('lista-cursos/', lista_cursos),
 ]
