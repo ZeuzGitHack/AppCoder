@@ -14,24 +14,24 @@ def lista_cursos(req):
 
 def inicio(req):
     
-    return HttpResponse("Pantalla inicio")
+    return render(req, "inicio.html", {})
 
 
 def cursos(req):
     
-    return HttpResponse("Pantalla cursos")
+    return render(req, "cursos.html", {})
 
 
 def profesores(req):
     
-    return HttpResponse("Pantalla profesores")
+    return render(req, "profesores.html", {})
 
 
 def estudiantes(req):
     
-    return HttpResponse("Pantalla estudiantes")
+    return render(req, "estudiantes.html", {})
 
 
 def entregables(req):
     
-    return HttpResponse("Pantalla entregables")
+    return render(req, "entregables.html", {})
